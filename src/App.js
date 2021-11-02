@@ -2,8 +2,8 @@ import './App.css';
 import { useEffect, useState } from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import { Link } from 'react-router-dom';
-import MoreInfo from './components/MoreInfo';
-import Ingredients from './components/Ingredients';
+import MoreInfo from './components/MoreInfo/MoreInfo';
+import Ingredients from './components/Ingredients/Ingredients';
 
 const App = () => {
   const [data, setData] = useState([])
