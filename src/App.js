@@ -10,7 +10,7 @@ const App = () => {
   const getter = async () => {
     const res = await fetch('https://api.punkapi.com/v2/beers/random')
     const newData = await res.json()
-    setData(newData)
+    setData(newData[0])
   }
   useEffect(() => {
     getter()
@@ -23,10 +23,10 @@ const App = () => {
     </div>
     <Switch>
       <Route path="/moreinfo">
-        <MoreInfo />
+        <MoreInfo tips={data.brewers_tips} pairing={data.food_pairing}/>
       </Route>
       <Route path="/ingredients">
-        <Ingredients />
+        <Ingredients ingredients={data.ingredients}/>
       </Route>
     </Switch>
     <nav>
