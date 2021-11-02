@@ -1,22 +1,26 @@
-import { useState } from "react"
 
-const Modal = (props) => {
-    const [show, setShow] = useState(false)
-    const handler = () => {
+import './Modal.css'
+const Modal = ({ tips, oppositeModal, setOppositeModal, show, setShow, children}) => {
+    
+    const openHandler = () => {
+        setOppositeModal(false)
         setShow(!show)
     }
-    if(!props){
+    const closeHandler = () => {
+        setShow(false)
+    }
+    if(!children){
         return <p>loading...</p>
     }
     return (
-        <div onClick={() => setShow(!show)}>
+        <div onClick={openHandler}>
             {show ? 
-            <div>
-                {props.children}
-                <p onClick={handler}>close</p>
+            <div className="modal">
+                {children}
+                <p onClick={closeHandler}>close</p>
                 </div> : 
             <div>
-               {props.tips ? <p>see tips</p> : <p>see pairing</p>}
+               {tips ? <p>see tips</p> : <p>see pairing</p>}
             </div>
             }
         </div>
