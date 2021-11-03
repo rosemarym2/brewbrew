@@ -33,7 +33,7 @@ const App = () => {
           <Ingredients ingredients={data.ingredients} />
         </Route>
         <Route path="/">
-          <Home data={data} />
+          <Home getter={getter} data={data} />
         </Route>
       </Switch>
       <Nav />

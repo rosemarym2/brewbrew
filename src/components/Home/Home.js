@@ -1,5 +1,6 @@
 import './Home.css'
-const Home = ({ data }) => {
+import Button from '../Button/Button'
+const Home = ({ data, getter }) => {
     return (
         <div id="homeWrap">
             <div id="brewInfo">
@@ -7,6 +8,7 @@ const Home = ({ data }) => {
                 <h3 id="brewId">{data.id}</h3>
                 <p id="brewDesc">{data.description}</p>
             </div>
+            <Button getter={getter} />
         </div>
     )
 }

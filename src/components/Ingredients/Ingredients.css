@@ -1,0 +1,26 @@
+#ingredientsWrapper {
+    border: solid black 3px;
+    display: flex;
+    padding: 5px;
+    justify-content: center;
+
+}
+#hopsWarpper {
+    border: solid pink 3px;
+    
+}
+#maltsWrapper {
+    border: solid green 3px;
+}
+#yeastWrapper {
+    border: purple solid 3px;
+
+}
+.ingredients {
+    width: 25%;
+    margin: 10px;
+}
+
+.ing_card{
+    border: solid grey 2px;
+}
