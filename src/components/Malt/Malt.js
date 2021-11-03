@@ -1,3 +1,4 @@
+import './Malt.css'
 const Malt = ({ malt }) => {
     if(!malt){
         return <p>loading...</p>

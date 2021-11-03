@@ -1,0 +1,20 @@
+#homeWrap {
+    border: solid 3px red;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+}
+#brewInfo {
+    border: solid aqua 3px;
+    padding: 2em;
+}
+#brewName {
+    font-size: 3em;
+}
+#brewId {
+    font-size: 2em;
+}
+#brewDesc{
+    max-width: 500px;;
+}

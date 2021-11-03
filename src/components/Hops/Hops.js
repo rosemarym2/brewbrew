@@ -1,3 +1,5 @@
+import './Hops.css'
+
 const Hops = ({ hop }) => {
     if(!hop){
         return <p>loading...</p>

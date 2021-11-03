@@ -1,6 +1,6 @@
 import Hops from "../Hops/Hops"
 import Malt from "../Malt/Malt"
-
+import './Ingredients.css'
 const Ingredients = ({ ingredients }) => {
     if(!ingredients){
         return <p>loading...</p>

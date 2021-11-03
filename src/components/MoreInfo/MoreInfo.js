@@ -1,4 +1,5 @@
 import Modal from "../Modal/Modal";
+import './MoreInfo.css'
 import { useState } from "react";
 const MoreInfo = (props) => {
   const [showTips, setShowTips] = useState(false);

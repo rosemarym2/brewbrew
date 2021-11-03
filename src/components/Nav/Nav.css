@@ -1,0 +1,29 @@
+#navWrap {
+    border: solid 3px yellow;
+    height: 5em;  
+}
+nav{
+    display: flex;
+    justify-content: center;
+}
+#linkList{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    text-decoration: none;
+    border: solid blue 3px;
+    width: 400px;
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    top: 90%;
+    z-index: 1;
+    background-color: tomato;
+}
+.item {
+    border: solid grey 3px;
+    margin: 5px;
+    padding: 10px;
+    width: 100px;
+    text-align: center;
+}
