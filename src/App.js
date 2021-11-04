@@ -27,7 +27,7 @@ const App = () => {
       </div>
       <Switch>
         <Route path="/moreinfo">
-          <MoreInfo tips={data.brewers_tips} pairing={data.food_pairing} />
+          <MoreInfo name={data.name} tagline={data.tagline} first_brew={data.first_brewed} img_url={data.image_url} tips={data.brewers_tips} pairing={data.food_pairing} />
         </Route>
         <Route path="/ingredients">
           <Ingredients ingredients={data.ingredients} />
