@@ -44,7 +44,7 @@ const MoreInfo = (props) => {
                 })}
               </Modal>
             </div>
-            <div>
+            <div id="brew_img_cont">
               {props.img_url ? (
                 <img id="brew_img" src={props.img_url} />
               ) : (

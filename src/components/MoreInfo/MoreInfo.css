@@ -8,6 +8,9 @@
     .modals {
         font-size: 0.7em;
     }
+    #brew_img {
+        max-width: 60%;
+    }
    
   }
   @media screen and (min-width: 500px) {
@@ -20,10 +23,13 @@
     .modals {
         font-size: 1.5em;
     }
+    #brew_img {
+        max-width: 40%;
+    }
   }
 
 #moreInfoWrapper{
-    border: purple 4px solid;
+    /* border: purple 4px solid; */
     width: 100%;
     padding: 0;
     margin: 0;
@@ -31,7 +37,7 @@
     flex-direction: column;
 }
 #moreInfoContainer {
-    border: solid red 3px;
+    /* border: solid red 3px; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -51,9 +57,7 @@
     ;
 }
 
-#brew_img {
-    width: 80%;
-}
+
 #basicInfo{
     width: 60%;
     margin: 5px;
@@ -67,13 +71,18 @@
 }
 #img_modal{
     display: flex;
-    border: solid red 2px;
+    /* border: solid red 2px; */
     max-width: 100%;
 }
 #modals{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    border: yellow solid 3px;
+    /* border: yellow solid 3px; */
     width: 50%;
+}
+#brew_img_cont {
+    display: flex;
+    justify-content: center;
+    /* border: solid red 3px; */
 }
