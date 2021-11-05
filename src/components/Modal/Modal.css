@@ -1,0 +1,61 @@
+@media screen and (max-width: 500px) {
+  .modal {
+    max-width: 15em;
+    width: 20em;
+  }
+  .modal h3 {
+    font-size: 2em;
+    color: blue;
+  }
+  .modal p {
+    font-size: 1em;
+  }
+  #closeModal {
+    font-size: 1em;
+  }
+
+}
+@media screen and (min-width: 500px) {
+  .modal {
+    max-width: 30em;
+    width: 40em;
+  }
+  .modal h3 {
+    font-size: 3em;
+    /* color: blue; */
+  }
+  .modal p {
+    font-size: 2em;
+  }
+  #closeModal {
+    font-size: 1.5em;
+  }
+}
+.modal {
+  background-color: rgb(255, 234, 98);
+  box-shadow:  rgba(240, 214, 46, 0.4) -5px 5px,
+  rgba(240, 214, 46, 0.3) -10px 10px, rgba(240, 214, 46, 0.2) -15px 15px,
+  rgba(240, 214, 46, 0.1) -20px 20px, rgba(240, 214, 46, 0.05) -25px 25px;
+  position: absolute;
+  top: 25%;
+  left: 15%;
+  transform: translate((-50%, -50%));
+
+
+}
+.modal h3 {
+  margin: 0;
+}
+
+#closeModal {
+  text-align: center;
+}
+.modalOpt {
+  margin: 15px;
+  border-radius: 4px;
+  text-align: center;
+  background-color: #2ef074;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+  rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  color: white;
+}
