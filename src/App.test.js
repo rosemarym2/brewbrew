@@ -1,8 +1,15 @@
-import { render, screen } from '@testing-library/react';
-import App from './App';
+import { render, screen } from "@testing-library/react";
+import App from "./App";
 
-test('renders learn react link', () => {
-  render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+describe("app component", () => {
+  test("renders learn react link", () => {
+    render(<App />);
+    const headElement = screen.getByText(/brew brew/i);
+    expect(headElement).toBeInTheDocument();
+  });
+  test("navBar in document", () => {
+    render(<App />)
+    const navElement = screen.getByRole('navigation')
+    expect(navElement).toBeInTheDocument() 
+  })
 });

@@ -19,7 +19,6 @@ const MoreInfo = (props) => {
             <p>{props.first_brew}</p>
           </div>
           <div id="img_modal">
-
             <div id="modals">
               <Modal
                 oppositeModal={showPairing}
@@ -46,7 +45,7 @@ const MoreInfo = (props) => {
             </div>
             <div id="brew_img_cont">
               {props.img_url ? (
-                <img id="brew_img" src={props.img_url} />
+                <img alt="preview of beer packaging"id="brew_img" src={props.img_url} />
               ) : (
                 <p>no image</p>
               )}
