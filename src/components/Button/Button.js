@@ -2,7 +2,7 @@ import "./Button.css"
 const Button = ({ getter }) => {
     return (
         <div>
-            <button onClick={getter}>get another brew</button>
+            <button data-testid="buttonMain" onClick={getter}>get another brew</button>
         </div>
     )
 }
