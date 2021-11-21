@@ -7,25 +7,23 @@ import Ingredients from "./components/Ingredients/Ingredients";
 import Home from "./components/Home/Home";
 import Nav from "./components/Nav/Nav";
 import { random } from "./utils/random";
+import { act } from "@testing-library/react";
 
 const App = () => {
   const [data, setData] = useState([]);
   const [loading, setLoading] = useState(true);
-  // const getter = () => {
-  //   return "func"
-  // }
-  // const url = "https://api.punkapi.com/v2/beers/random"
-  // const { newData, error } = useSWR(url, random)
-
-  // if(error) return "error"
-  // if(!data) return "Loading"
-  // setData(newData[0])
 
   const getter = async () => {
-    setData([]);
-    let newData = await random();
-    setData(newData[0]);
-    setLoading(false);
+    try {
+      setData([]);
+      let newData = await random();
+      act(() => {
+        setData(newData[0]);
+        setLoading(false);
+      })
+    } catch(e) {
+      return null
+    }
   };
   useEffect(() => {
     getter();

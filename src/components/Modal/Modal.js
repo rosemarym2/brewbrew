@@ -1,7 +1,6 @@
 import "./Modal.css";
 const Modal = ({
   tips,
-  oppositeModal,
   setOppositeModal,
   show,
   setShow,
@@ -18,7 +17,7 @@ const Modal = ({
     return <p>loading...</p>;
   }
   return (
-    <div onClick={openHandler}>
+    <div data-testid="modalContainer" onClick={openHandler}>
       {show ? (
         <div className="modal">
           {children}
