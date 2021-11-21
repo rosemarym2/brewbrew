@@ -10,12 +10,13 @@ const Ingredients = ({ ingredients }) => {
   const yeast = ingredients.yeast;
   return (
     <div id="ingredientsWrapper">
+      <h2>Ingredients</h2>
       <div className="ingredients" id="hopsWarpper">
         <h2>hops</h2>
         {hops.map((hop, index) => {
           return (
-            <div className="ing_card">
-              <Hops key={index} hop={hop} />
+            <div key={index} className="ing_card">
+              <Hops hop={hop} />
             </div>
           );
         })}
@@ -24,8 +25,8 @@ const Ingredients = ({ ingredients }) => {
         <h2>malts</h2>
         {malts.map((malt, index) => {
           return (
-            <div className="ing_card">
-              <Malt key={index} malt={malt} />
+            <div key={index} className="ing_card">
+              <Malt malt={malt} />
             </div>
           );
         })}
